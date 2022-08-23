@@ -1,0 +1,302 @@
+body, h1, h2, h3, p, ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+    /*NAVEGAÇÃO*/
+
+.header {
+    background: #e7e4d8;
+    width: 100%;
+    height: 150px;
+    align-items: center;
+    display: flex;
+}
+
+.container-nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border-top: 3px  solid #903431;
+    border-left: 3px  solid #903431;
+    border-right: 3px  solid #903431;
+    
+}
+
+.nav-logo img{
+    height: 140px;
+    margin: 0 20px;
+}
+
+.nav-lista  ul{
+    display: flex;
+    margin: 0 20px;
+}
+
+.nav-lista li {
+    padding: 10px 20px;
+    margin: 0 10px;
+    list-style: none;
+    background: #903431;
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#menuDemo {
+    display: block;
+}
+
+/*MENU MOBILE*/
+
+.menu-icon-wrapper {
+    display: none;
+}
+
+/* MENU*/
+
+.container-section{
+    background: url(./comida.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.section-titulo {
+    color: #fff;
+    width: 80%;
+    padding: 50px;
+    margin: 0 auto;
+    font-family: Ruthie,sans-serif;
+    font-size: 80px;
+    letter-spacing: -1.3px;
+    
+}
+
+.container-menu {
+    background: #FBFBFB;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px  solid #903431;
+    border-left: 3px  solid #903431;
+    border-right: 3px  solid #903431;
+}
+
+.menu-especial {
+    padding: 80px 0;
+}
+
+.menu-especial h1 {
+    font-size: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid #903431;
+    border-bottom: 1px solid #903431;
+    padding: 50px 0;
+    
+}
+
+.container-menu h2 {
+    font-size: 40px;
+    margin: 25px;
+    text-transform: uppercase;
+}
+
+.container-menu p {
+    font-size: 25px;
+    font-style: italic;
+    margin: 10px 0;
+}
+
+
+
+
+@media only screen and (max-width:600px) {
+    .section-titulo {
+        font-size: 60px;
+    }
+
+    .menu-especial h1 {
+        font-size: 50px;
+    }
+
+    .container-menu h2 {
+        font-size: 25px;
+    }
+
+    .nav-lista {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .menu-icon-wrapper {
+        display: block;
+    }
+
+    
+}
+
+/*FOOTER*/
+
+.footer {
+    background: #e7e4d8;
+    height: 300px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-footer {
+    width: 22%;
+    height: 150px;
+    border: 10px solid #903431;
+    display: flex;
+    align-items: center;
+}
+
+.nav-footer ul {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nav-footer li {
+    width: 100px;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    list-style: none;
+    background: #903431;
+    font-family: Poppins, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.nav-footer li:hover, .nav-lista li:hover {
+    background: #B65F5A;
+}
+
+.local-footer {
+    width: 30%;
+    height: 150px;
+    border: 10px solid #903431;
+}
+
+.local-footer h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+.local-footer p {
+    font-size: 25px;
+    font-style: italic;
+    margin: 5px 0;
+    text-align: center;
+}
+
+.rede-footer {
+    width: 30%;
+    height: 150px;
+    border: 10px solid #903431;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rede-footer h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 5px;
+}
+
+.rede-img  img{
+    height: 50px;
+    margin: 0 20px;
+    
+}
+
+
+.atendimento {
+    display: flex;
+    justify-content: space-around;
+    background: #E7E4D8;
+}
+
+.autor-footer {
+    background-color: #292A29;
+    width: 100%;
+    text-align: center;
+    color: #ffff;
+}
+
+@media only screen and (max-width:600px) {
+    .footer {
+        height: 600px;
+        flex-direction: column;
+    }
+
+    .nav-footer {
+        height: 120px;
+    }
+
+    .local-footer {
+        height: 120px;
+    }
+
+    .local-footer h2 {
+        font-size: 40px;
+    }
+
+    .rede-footer {
+        height: 100px;
+    }
+
+    .rede-footer h2 {
+        font-size: 40px;
+    }
+
+    .nav-footer, .local-footer, .rede-footer {
+        width: 90%;
+    }
+
+    .atendimento h1 {
+        font-size: 15px;
+    }
+
+    .rede-img img {
+        height: 40px;
+    }
+
+    .horario-1 {
+        margin-right: 10px;
+    }
+
+    .horario-1 h3, .horario-2 h3{
+        font-size: 15px;
+    }
+
+    .autor-footer h1 {
+        font-size: 20px;
+    }
+
+
+}
